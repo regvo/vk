@@ -6,7 +6,8 @@ function get_files($dir = ".") {
     while (false !== ($item = readdir($handle))) {
       if (is_file("$dir/$item")) {
         $files[] = "$dir/$item";
-      } elseif (is_dir("$dir/$item") && ($item != ".") && ($item != "..")) {
+      }
+      elseif (is_dir("$dir/$item") && ($item != ".") && ($item != "..")) {
         $files = array_merge($files, get_files("$dir/$item"));
       }
     }
@@ -34,9 +35,9 @@ $user = cmsUser::getInstance();
 if ($user->is_logged && ($user->id == 2 || $user->id == 1)) {
   //Подготавливаем список файлов
   $needle_array = [
-      0 => '.git',
-      1 => 'nbproject',
-      2 => 'backups',
+    0 => '.git',
+    1 => 'nbproject',
+    2 => 'backups',
   ];
   $f            = get_files();
   $fi           = str_replace('./', '', $f);
@@ -67,7 +68,8 @@ if ($user->is_logged && ($user->id == 2 || $user->id == 1)) {
   $cmd      = 'mysqldump -u' . $config->db_user . ' -p' . $config->db_pass . ' ' . $config->db_base . ' > ' . $filename;
   system($cmd);
   print 'BackUp базы данных создан.<br/>OK.';
-} else {
+}
+else {
   cmsCore::error404();
 }
 
