@@ -1,0 +1,22 @@
+/* 
+    Кнопка прокрутки страницы вверх/вниз
+
+    Created on : 02.02.2016
+    Author     : Val
+*/
+
+.btn-scroll-up {
+    position: fixed;
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.has-position.hidden {
+    display: block !important;
+}
+@media only screen and (max-device-width : 480px) {
+    .btn-scroll-up {
+        display: none;
+    }
+}

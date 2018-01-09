@@ -1,0 +1,31 @@
+---
+color: '#20b2aa'
+bg_color: '#eeeeee'
+bg_img: null
+bg_img_fix: null
+bg_repeat: repeat
+bg_img_pos_x: left
+bg_img_pos_y: top
+aside_pos: right
+favicon: null
+fix_menu: 1
+fix_usermenu: 1
+margin_top: 0
+logo:
+  original: 000/u1/28/59/396ae1ee.png
+  small: 000/u1/a3/c3/2ca581e2.png
+headbgcolor: '#ffffff'
+hidebgimg: null
+headbg: null
+headbg_repeat: repeat
+headbg_img_pos_x: left
+headbg_img_pos_y: top
+headpadding: 55
+footerbg: null
+footerbg_img_pos_x: left
+footerbg_img_pos_y: top
+owner_name: Сайт города Красавино
+owner_url:
+owner_year: 2017
+hide_text: Сайт города Красавино
+counters:

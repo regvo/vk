@@ -1,0 +1,26 @@
+#layout .is_blocks .widget_tags_cloud .tags_as_cloud li a {
+    background: #fff; font-size: inherit; padding: 3px; margin: 0;
+}
+.widget_tags_cloud .tags_as_cloud li {margin: 0 8px 8px 0;}
+#main_content .controller_actions_menu ul.menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    right: 0;
+    border: 1px solid #dfe6ed;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+#main_content .controller_actions_menu ul.menu li {
+    padding: 3px 0;
+    line-height: 100%;
+}
+#main_content .controller_actions_menu > input:checked + label + ul.menu {
+    display: block;
+}
+#main_content section .list_actions_menu .menu a {
+    padding: 4px 10px;
+}
+.my_logobox {padding: 0px 15px !important;}
+header .menu > .folder > a > .wrap:after, #main_menu .flexMenu-viewMore > a:after {content: none;}
